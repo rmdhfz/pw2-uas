@@ -15,7 +15,9 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap.min.js"></script>
     <script>
-        $("#table-penjual").DataTable();
+        $(document).ready(function() {
+            $("#table-penjual").DataTable();
+        });
     </script>
 </head>
 <body>
@@ -64,7 +66,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title">Form Siswa</h4>
+					<h4 class="modal-title">Form Penjual</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
@@ -145,6 +147,7 @@
 								$("#id").val(data.id);
 								$("#name").val(data.name);
 								$("#email").val(data.email);
+                                $("#no_telp").val(data.no_telp);
 							}
 					}
 				});
