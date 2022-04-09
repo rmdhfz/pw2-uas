@@ -19,7 +19,7 @@
 	?>
 	<br/>
 	<br/>
-	<form method="post" action="tokoonline/ceklogin.php">
+	<form method="post" action="/tokoonline/ceklogin.php">
 		<table>
 			<tr>
 				<td>Username</td>
