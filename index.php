@@ -154,7 +154,7 @@
 							if (data) {
 								$("#modal-penjual").modal('show');
 								$("#id").val(data.id);
-								$("#name").val(data.name);
+								$("#name").val(data.nama);
 								$("#email").val(data.email);
                                 $("#no_telp").val(data.no_telp);
 							}
