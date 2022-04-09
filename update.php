@@ -5,10 +5,11 @@
 			$name = $_POST['name'];
 			$email = $_POST['email'];
             $no_telp = $_POST['no_telp'];
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 			if ($name && $email) {
 				require_once 'connect.php';
 				try {
-					$sql = "UPDATE penjual SET name = '$name', email = '$email', no_telp = '$no_telp' WHERE id = '$id'";
+					$sql = "UPDATE penjual SET nama = '$name', email = '$email', no_telp = '$no_telp', password = '$password' WHERE id = '$id'";
 					if (!$con->query($sql)) {
 						echo $con->error;
 					}else{

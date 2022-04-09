@@ -5,7 +5,8 @@
 			$name = $_POST['name'];
 			$email = $_POST['email'];
             $no_telp = $_POST['no_telp'];
-			$sql = "INSERT INTO penjual (name, email, no_telp) VALUES ('$name', '$email', '$no_telp')";
+            $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+			$sql = "INSERT INTO penjual (nama, email, no_telp, password) VALUES ('$name', '$email', '$no_telp', '$password')";
 			if (!$con->query($sql)) {
 				echo $con->error;
 			}else{

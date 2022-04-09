@@ -94,6 +94,14 @@
 									<input type="text" name="no_telp" id="no_telp" pattern="[0-9]{10,13}" class="form-control" required="1" placeholder="enter your phone" minlength="10" maxlength="13">
 								</div>
 							</div>
+                            <div class="form-group row">
+								<label class="col-sm-2 col-form-label">
+									Password
+								</label>
+								<div class="col-sm-10">
+									<input type="text" name="password" id="password" class="form-control" required="1" placeholder="enter your password" minlength="3" maxlength="35">
+								</div>
+							</div>
 							<button type="submit" name="submit_" id="submit_" value="true" hidden="1"></button>
 						</form>
 					</div>
