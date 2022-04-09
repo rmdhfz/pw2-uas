@@ -37,6 +37,7 @@
 					<th>Name</th>
 					<th>Email</th>
 					<th>Nomor Telepon</th>
+                    <th>Opsi</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -48,7 +49,7 @@
 						while($object = mysqli_fetch_object($query)){ ?>
 							<tr>
 								<td><?php echo $no;?></td>
-								<td><?php echo $object->name;?></td>
+								<td><?php echo $object->nama;?></td>
 								<td><?php echo $object->email;?></td>
 								<td><?php echo $object->no_telp;?></td>
 								<td>
