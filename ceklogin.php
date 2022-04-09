@@ -9,8 +9,8 @@ $cek = mysqli_num_rows($data);
 if($cek > 0){
 	$_SESSION['email'] = $email;
 	$_SESSION['status'] = "login";
-	header("location:index.php");
+	header("location:/tokoonline/");
 }else{
-	header("location:index.php?msg=failed");
+	header("location:tokoonline/?msg=failed");
 }
 ?>

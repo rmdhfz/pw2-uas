@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 	if($_SESSION['status']!="login"){
-		header("location:/login.php?msg=login");
+		header("location:/tokoonline/login.php?msg=login");
 	}
 ?>
 <!DOCTYPE html>
