@@ -99,7 +99,7 @@
 									Password
 								</label>
 								<div class="col-sm-10">
-									<input type="text" name="password" id="password" class="form-control" required="1" placeholder="enter your password" minlength="3" maxlength="35">
+									<input type="password" name="password" id="password" class="form-control" required="1" placeholder="enter your password" minlength="3" maxlength="35">
 								</div>
 							</div>
 							<button type="submit" name="submit_" id="submit_" value="true" hidden="1"></button>
