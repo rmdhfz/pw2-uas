@@ -11,6 +11,6 @@ if($cek > 0){
 	$_SESSION['status'] = "login";
 	header("location:/tokoonline/");
 }else{
-	header("location:tokoonline/?msg=failed");
+	header("location:/tokoonline/?msg=failed");
 }
 ?>
